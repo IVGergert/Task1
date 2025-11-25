@@ -1,0 +1,5 @@
+2025-11-25 20:05:55.484 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Общий возраст студентов подсчитан: 144
+2025-11-25 20:05:55.498 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Минимальный возраст студента найден: 16
+2025-11-25 20:05:55.499 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Максимальный возраст студента найден: 55
+2025-11-25 20:05:55.503 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Максимальный id студента найден: 5
+2025-11-25 20:05:55.504 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Минимальный id студента найден: 1
