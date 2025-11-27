@@ -12,14 +12,14 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public int findMaxAgeForStudent(Student[] students) throws CustomException {
-        if (students == null || students.length == 0){
-            logger.error("Студенты не найдены");
-            throw new CustomException("Студенты не найдены");
+        if (students == null || students.length == 0) {
+            logger.error("Attempt to search in empty array");
+            throw new CustomException("Array is empty or null");
         }
 
         if (students[0] == null) {
-            logger.error("Первый элемент null");
-            throw new CustomException("Первый элемент null");
+            logger.error("First element is null");
+            throw new CustomException("First element is null");
         }
 
         int maxAge = students[0].getAge();
@@ -30,20 +30,20 @@ public class StudentServiceImpl implements StudentService {
             }
         }
 
-        logger.info("Максимальный возраст студента найден: {}",  maxAge);
+        logger.info("Max student age found: {}",  maxAge);
         return maxAge;
     }
 
     @Override
     public int findMinAgeForStudent(Student[] students) throws CustomException  {
         if (students == null || students.length == 0){
-            logger.error("Студенты не найдены");
-            throw new CustomException("Студенты не найдены");
+            logger.error("Array is empty or null");
+            throw new CustomException("Array is empty or null");
         }
 
         if (students[0] == null) {
-            logger.error("Первый элемент null");
-            throw new CustomException("Первый элемент null");
+            logger.error("First element is null");
+            throw new CustomException("First element is null");
         }
 
         int minAge = students[0].getAge();
@@ -54,20 +54,20 @@ public class StudentServiceImpl implements StudentService {
             }
         }
 
-        logger.info("Минимальный возраст студента найден: {}",  minAge);
+        logger.info("Min student age found: {}",  minAge);
         return minAge;
     }
 
     @Override
     public int findMaxStudentId(Student[] students) throws CustomException {
         if (students == null || students.length == 0){
-            logger.error("Студенты не найдены");
-            throw new CustomException("Студенты не найдены");
+            logger.error("Array is empty or null");
+            throw new CustomException("Array is empty or null");
         }
 
         if (students[0] == null) {
-            logger.error("Первый элемент null");
-            throw new CustomException("Первый элемент null");
+            logger.error("First element is null");
+            throw new CustomException("First element is null");
         }
 
         int maxStudentId = students[0].getStudentId();
@@ -78,20 +78,20 @@ public class StudentServiceImpl implements StudentService {
             }
         }
 
-        logger.info("Максимальный id студента найден: {}", maxStudentId);
+        logger.info("Max student ID found: {}", maxStudentId);
         return maxStudentId;
     }
 
     @Override
     public int findMinStudentId(Student[] students) throws CustomException {
         if (students == null || students.length == 0){
-            logger.error("Студенты не найдены");
-            throw new CustomException("Студенты не найдены");
+            logger.error("Array is empty or null");
+            throw new CustomException("Array is empty or null");
         }
 
         if (students[0] == null) {
-            logger.error("Первый элемент null");
-            throw new CustomException("Первый элемент null");
+            logger.error("First element is null");
+            throw new CustomException("First element is null");
         }
 
         int minStudentId = students[0].getStudentId();
@@ -102,29 +102,29 @@ public class StudentServiceImpl implements StudentService {
             }
         }
 
-        logger.info("Минимальный id студента найден: {}", minStudentId);
+        logger.info("Min student ID found: {}", minStudentId);
         return minStudentId;
     }
 
     @Override
     public int calculateTotalAge(Student[] students) throws CustomException{
         if (students == null || students.length == 0){
-            logger.error("Студенты не найдены");
-            throw new CustomException("Студенты не найдены");
+            logger.error("Array is empty or null");
+            throw new CustomException("Array is empty or null");
         }
 
         if (students[0] == null) {
-            logger.error("Первый элемент null");
-            throw new CustomException("Первый элемент null");
+            logger.error("First element is null");
+            throw new CustomException("First element is null");
         }
 
-        int calculateTotalAge = 0;
+        int totalAge = 0;
 
         for (Student student : students) {
-            calculateTotalAge += student.getAge();
+            totalAge += student.getAge();
         }
 
-        logger.info("Общий возраст студентов подсчитан: {}", calculateTotalAge);
-        return calculateTotalAge;
+        logger.info("Total student age calculated: {}", totalAge);
+        return totalAge;
     }
 }

@@ -17,7 +17,7 @@ public class StudentFactoryImpl implements StudentFactory{
         }
 
         if (id < 0 || age < 0){
-            logger.warn("\"Данные id='{}', age='{}' отрицательны", id, age);
+            logger.warn("Данные id='{}', age='{}' отрицательны", id, age);
             throw new CustomException("Данные не могут быть отрицательным");
         }
 

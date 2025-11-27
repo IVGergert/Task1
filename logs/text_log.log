@@ -1,5 +1,23 @@
-2025-11-25 20:05:55.484 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Общий возраст студентов подсчитан: 144
-2025-11-25 20:05:55.498 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Минимальный возраст студента найден: 16
-2025-11-25 20:05:55.499 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Максимальный возраст студента найден: 55
-2025-11-25 20:05:55.503 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Максимальный id студента найден: 5
-2025-11-25 20:05:55.504 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Минимальный id студента найден: 1
+2025-11-27 18:26:07.859 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Total student age calculated: 144
+2025-11-27 18:26:07.871 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Min student age found: 16
+2025-11-27 18:26:07.873 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Max student age found: 55
+2025-11-27 18:26:07.875 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Max student ID found: 5
+2025-11-27 18:26:07.878 [main] INFO  gergert.task1.service.impl.StudentServiceImpl - Min student ID found: 1
+2025-11-27 18:31:06.219 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:31:06.244 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Сортировка пузырьком завершена
+2025-11-27 18:33:14.213 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:33:14.237 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Сортировка пузырьком завершена
+2025-11-27 18:36:20.090 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:36:20.117 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Сортировка пузырьком завершена
+2025-11-27 18:41:22.877 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:42:30.537 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Сортировка пузырьком завершена
+2025-11-27 18:43:25.949 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Сортировка пузырьком завершена
+2025-11-27 18:43:37.566 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:43:37.579 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Сортировка пузырьком завершена
+2025-11-27 18:44:14.541 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:44:14.557 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Bubble sort finished
+2025-11-27 18:44:24.871 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:44:24.897 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Bubble sort finished
+2025-11-27 18:44:38.121 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Bubble sort finished
+2025-11-27 18:44:45.768 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-11-27 18:44:45.785 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Bubble sort finished
