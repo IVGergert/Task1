@@ -295,3 +295,28 @@
 2025-11-30 11:41:39.699 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=7, Name=Дмитрий, Age=12
 2025-11-30 11:41:39.700 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 7, name = 'Дмитрий', age = 12}
 2025-11-30 11:41:39.700 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 4
+2025-11-30 13:38:44.602 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 13:38:44.605 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 8
+2025-11-30 13:38:44.605 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Илья, 29
+2025-11-30 13:38:44.605 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=1, Name=Илья, Age=29
+2025-11-30 13:38:44.605 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 1, name = 'Илья', age = 29}
+2025-11-30 13:38:44.606 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping isEmpty line: 
+2025-11-30 13:38:44.606 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 12 - Кирилл - 42
+2025-11-30 13:38:44.606 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=12, Name=Кирилл, Age=42
+2025-11-30 13:38:44.606 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 12, name = 'Кирилл', age = 42}
+2025-11-30 13:38:44.606 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1-232323 ddwadawd
+2025-11-30 13:38:44.606 [main] WARN  gergert.task1.validator.impl.StudentValidatorImpl - Invalid Name format: '232323'
+2025-11-30 13:38:44.606 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Validation failed for line: 1-232323 ddwadawd
+2025-11-30 13:38:44.607 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 1-232323 ddwadawd, Reason: Validation failed for line: 1-232323 ddwadawd
+2025-11-30 13:38:44.607 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping isEmpty line: 
+2025-11-30 13:38:44.607 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: sdz 1212 wdq2w
+2025-11-30 13:38:44.607 [main] WARN  gergert.task1.validator.impl.StudentValidatorImpl - Invalid ID format: 'sdz'
+2025-11-30 13:38:44.608 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Validation failed for line: sdz 1212 wdq2w
+2025-11-30 13:38:44.608 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: sdz 1212 wdq2w, Reason: Validation failed for line: sdz 1212 wdq2w
+2025-11-30 13:38:44.608 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 3, Коваль, 51
+2025-11-30 13:38:44.608 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=3, Name=Коваль, Age=51
+2025-11-30 13:38:44.608 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 3, name = 'Коваль', age = 51}
+2025-11-30 13:38:44.609 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 7 - Дмитрий - 12
+2025-11-30 13:38:44.609 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=7, Name=Дмитрий, Age=12
+2025-11-30 13:38:44.609 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 7, name = 'Дмитрий', age = 12}
+2025-11-30 13:38:44.609 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 4

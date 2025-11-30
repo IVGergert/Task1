@@ -17,13 +17,21 @@ import java.util.List;
 
 public class StudentReaderImpl implements StudentReader {
     private static final Logger logger = LogManager.getLogger(StudentReaderImpl.class);
-    private final StudentValidatorImpl validator = new StudentValidatorImpl();
     private final StudentParserImpl parser = new StudentParserImpl();
 
     @Override
     public Student[] readStudentsFromFile(String filePath) throws CustomException {
         logger.info("Reading file: {}", filePath);
 
+        List<String> lines = readLinesFromFile(filePath);
+
+        List<Student> students = parseLinesToStudents(lines);
+
+        logger.info("Finished processing. Total valid students: {}", students.size());
+        return students.toArray(new Student[0]);
+    }
+
+    private List<String> readLinesFromFile(String filePath) throws CustomException{
         Path path = Paths.get(filePath);
         boolean exists = Files.exists(path);
 
@@ -32,35 +40,35 @@ public class StudentReaderImpl implements StudentReader {
             throw new CustomException("File not found: " + filePath);
         }
 
-        List<String> lines;
-
         try {
-            lines = Files.readAllLines(path);
+            List<String> lines = Files.readAllLines(path);
             logger.info("File read successfully. Total lines: {}", lines.size());
+            return lines;
         } catch (IOException e) {
-            logger.error("Error reading file: " + filePath, e);
+            logger.error("Error reading file: {}", filePath, e);
             throw new CustomException("Error reading file: " + filePath, e);
         }
+    }
 
+    private List<Student> parseLinesToStudents(List<String> lines) {
         List<Student> students = new ArrayList<>();
 
         for (String line : lines) {
-            if (validator.isValid(line)){
+            if (line.isEmpty()) {
+                logger.warn("Skipping isEmpty line: {}", line);
+                continue;
+            }
 
-                try {
-                    Student student = parser.parseStudent(line);
-                    students.add(student);
-                    logger.info("Student created successfully: {}", student);
-                } catch (CustomException e){
-                    logger.error("Error parsing line '{}': {}", line, e.getMessage());
-                }
-            } else {
-                logger.warn("Skipping invalid line: {}", line);
+            try {
+                Student student = parser.parseStudent(line);
+                students.add(student);
+                logger.info("Student created successfully: {}", student);
+            } catch (CustomException e) {
+                logger.warn("Skipping invalid line: {}, Reason: {}", line, e.getMessage());
             }
         }
 
-        logger.info("Finished processing. Total valid students: {}", students.size());
-        return students.toArray(new Student[0]);
+        return students;
     }
 }
 
