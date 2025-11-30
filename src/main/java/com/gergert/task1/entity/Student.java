@@ -59,9 +59,9 @@ public class Student {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Student{");
-        sb.append("studentId =").append(studentId);
-        sb.append(", name ='").append(name).append('\'');
-        sb.append(", age =").append(age);
+        sb.append("studentId = ").append(studentId);
+        sb.append(", name = '").append(name).append('\'');
+        sb.append(", age = ").append(age);
         sb.append('}');
         return sb.toString();
     }

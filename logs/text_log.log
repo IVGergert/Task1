@@ -21,3 +21,277 @@
 2025-11-27 18:44:38.121 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Bubble sort finished
 2025-11-27 18:44:45.768 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
 2025-11-27 18:44:45.785 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Bubble sort finished
+2025-11-28 16:56:20.838 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 16:56:20.843 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing string: 1  Илья     16
+2025-11-28 18:19:15.481 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 18:19:15.485 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Found 7 lines in file
+2025-11-28 18:19:15.485 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1  Илья     16
+2025-11-28 18:22:56.051 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 18:22:56.054 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Found 7 lines in file
+2025-11-28 18:22:56.054 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1  Илья     16
+2025-11-28 18:24:33.405 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 18:24:33.408 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Found 7 lines in file
+2025-11-28 18:24:33.408 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1  Илья     16
+2025-11-28 21:19:06.971 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 21:19:06.974 [main] ERROR gergert.task1.parser.impl.StudentParserImpl - File not found at: data/students.txt
+2025-11-28 21:19:41.932 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 21:19:41.936 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Found 0 lines in file
+2025-11-28 21:19:41.936 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Successfully loaded 0 students
+2025-11-28 21:20:51.428 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 21:20:51.431 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Found 7 lines in file
+2025-11-28 21:20:51.431 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1  Ilya     16
+2025-11-28 21:22:12.425 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Reading file: data/students.txt
+2025-11-28 21:22:12.429 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Found 7 lines in file
+2025-11-28 21:22:12.429 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1 Илья 16
+2025-11-29 16:36:52.043 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students
+2025-11-29 16:36:52.046 [main] WARN  gergert.task1.validator.impl.StudentValidatorImpl - Invalid parts count: 1, Ivan, 20
+2025-11-29 16:36:52.047 [main] WARN  gergert.task1.validator.impl.StudentValidatorImpl - Invalid parts count: 2 - Petr - 17
+2025-11-29 16:36:52.047 [main] WARN  gergert.task1.validator.impl.StudentValidatorImpl - Invalid parts count: 3   Anna   19
+2025-11-29 16:36:52.047 [main] WARN  gergert.task1.validator.impl.StudentValidatorImpl - Invalid parts count: 5 - 123Name - 22
+2025-11-29 16:42:58.170 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students
+2025-11-29 16:42:58.174 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 10:54:53.293 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students
+2025-11-30 10:54:53.297 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:00:07.230 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students
+2025-11-30 11:00:07.234 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:00:07.234 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:12:29.983 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students
+2025-11-30 11:12:29.986 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:12:29.986 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:12:29.986 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:12:29.987 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:12:58.295 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students
+2025-11-30 11:12:58.298 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:12:58.298 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:12:58.298 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:12:58.299 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:15:11.347 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students
+2025-11-30 11:15:11.350 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - File not found: data/students
+2025-11-30 11:15:19.919 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:15:19.923 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:15:19.924 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:15:19.924 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:15:19.925 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:18:42.608 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:18:42.612 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:18:42.612 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:18:42.612 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:18:42.614 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:19:18.931 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:19:18.934 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:19:18.935 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:19:18.935 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:19:18.935 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:20:00.911 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:20:00.914 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:20:00.915 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:20:00.915 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:20:26.070 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:20:28.771 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:20:28.775 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 5
+2025-11-30 11:20:28.775 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:20:28.776 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:20:28.776 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:21:52.744 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:21:52.748 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:21:52.748 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:21:52.748 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:21:52.749 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:23:23.591 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:23:23.595 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:23:23.595 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:23:23.595 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:23:23.595 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:24:48.771 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:24:48.774 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:24:48.774 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:24:48.775 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:24:48.775 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:24:48.775 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:24:48.775 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:24:48.776 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 2 - Petr - 17
+2025-11-30 11:24:48.776 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 2 - Petr - 17
+2025-11-30 11:24:48.776 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '2 - Petr - 17': Error parsing numbers in line: 2 - Petr - 17
+2025-11-30 11:24:48.776 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:24:48.776 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:24:48.777 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 3   An1212na   19
+2025-11-30 11:24:48.777 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 4, Wrong21d2Age, x5121
+2025-11-30 11:24:48.777 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 5 - 123Name - 22
+2025-11-30 11:24:48.777 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 0
+2025-11-30 11:26:37.126 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:26:37.128 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:26:37.129 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:26:37.129 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:26:37.129 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:26:37.130 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:26:37.130 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:26:37.130 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 2 - Petr - 17
+2025-11-30 11:26:37.130 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 2 - Petr - 17
+2025-11-30 11:26:37.130 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '2 - Petr - 17': Error parsing numbers in line: 2 - Petr - 17
+2025-11-30 11:26:37.130 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:26:37.130 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:26:37.130 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 3   An1212na   19
+2025-11-30 11:26:37.130 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 4, Wrong21d2Age, x5121
+2025-11-30 11:26:37.130 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 5 - 123Name - 22
+2025-11-30 11:26:37.131 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 0
+2025-11-30 11:26:51.733 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:26:51.736 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:26:51.737 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:26:51.737 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:26:51.737 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:26:51.738 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:26:51.738 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:26:51.738 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 2 - Petr - 17
+2025-11-30 11:26:51.738 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 2 - Petr - 17
+2025-11-30 11:26:51.738 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '2 - Petr - 17': Error parsing numbers in line: 2 - Petr - 17
+2025-11-30 11:26:51.738 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:26:51.739 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:26:51.739 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 3   An1212na   19
+2025-11-30 11:26:51.739 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 4, Wrong21d2Age, x5121
+2025-11-30 11:26:51.739 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 5 - 123Name - 22
+2025-11-30 11:26:51.739 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 0
+2025-11-30 11:27:20.886 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:27:20.889 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:27:20.889 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:27:20.889 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:27:20.889 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:27:20.889 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:27:20.890 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:27:20.890 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 2 - Petr - 17
+2025-11-30 11:27:20.890 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 2 - Petr - 17
+2025-11-30 11:27:20.890 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '2 - Petr - 17': Error parsing numbers in line: 2 - Petr - 17
+2025-11-30 11:27:20.890 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:27:20.891 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:27:20.891 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 3   An1212na   19
+2025-11-30 11:27:20.892 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 4, Wrong21d2Age, x5121
+2025-11-30 11:27:20.892 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 5 - 123Name - 22
+2025-11-30 11:27:20.892 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 0
+2025-11-30 11:28:26.510 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:28:26.513 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:28:26.513 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:28:26.513 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:28:26.513 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:28:26.514 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:28:26.514 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:28:26.514 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 2 - Petr - 17
+2025-11-30 11:28:26.514 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 2 - Petr - 17
+2025-11-30 11:28:26.514 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '2 - Petr - 17': Error parsing numbers in line: 2 - Petr - 17
+2025-11-30 11:28:26.514 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:28:26.515 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:28:26.515 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 3   An1212na   19
+2025-11-30 11:28:26.515 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 4, Wrong21d2Age, x5121
+2025-11-30 11:28:26.515 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 5 - 123Name - 22
+2025-11-30 11:28:26.515 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 0
+2025-11-30 11:29:23.762 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:29:23.766 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 7
+2025-11-30 11:29:23.767 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Ivan, 20
+2025-11-30 11:29:23.767 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Ivan, 20
+2025-11-30 11:29:23.768 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Ivan, 20': Error parsing numbers in line: 1, Ivan, 20
+2025-11-30 11:29:23.768 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:29:23.768 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:29:23.768 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 2 - Petr - 17
+2025-11-30 11:29:23.769 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 2 - Petr - 17
+2025-11-30 11:29:23.769 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '2 - Petr - 17': Error parsing numbers in line: 2 - Petr - 17
+2025-11-30 11:29:23.769 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:29:23.769 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:29:23.769 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 3   An1212na   19
+2025-11-30 11:29:23.770 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 4, Wrong21d2Age, x5121
+2025-11-30 11:29:23.770 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 5 - 123Name - 22
+2025-11-30 11:29:23.770 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 0
+2025-11-30 11:31:12.200 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:31:12.203 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 6
+2025-11-30 11:31:12.203 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Илья, 29
+2025-11-30 11:31:12.204 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 1, Илья, 29
+2025-11-30 11:31:12.204 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '1, Илья, 29': Error parsing numbers in line: 1, Илья, 29
+2025-11-30 11:31:12.204 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:31:12.204 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:31:12.204 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 12 - Кирилл - 42
+2025-11-30 11:31:12.205 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 12 - Кирилл - 42
+2025-11-30 11:31:12.205 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '12 - Кирилл - 42': Error parsing numbers in line: 12 - Кирилл - 42
+2025-11-30 11:31:12.205 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty
+2025-11-30 11:31:12.205 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:31:12.205 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 3, Коваль, 51
+2025-11-30 11:31:12.205 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 3, Коваль, 51
+2025-11-30 11:31:12.205 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '3, Коваль, 51': Error parsing numbers in line: 3, Коваль, 51
+2025-11-30 11:31:12.206 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 7 - Дмитрий - 12
+2025-11-30 11:31:12.206 [main] WARN  gergert.task1.parser.impl.StudentParserImpl - Number format error in line: 7 - Дмитрий - 12
+2025-11-30 11:31:12.207 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - Error parsing line '7 - Дмитрий - 12': Error parsing numbers in line: 7 - Дмитрий - 12
+2025-11-30 11:31:12.207 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 0
+2025-11-30 11:39:15.814 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:39:15.817 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 6
+2025-11-30 11:39:15.817 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Илья, 29
+2025-11-30 11:39:15.818 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=1, Name=Илья, Age=29
+2025-11-30 11:39:15.818 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =1, name ='Илья', age =29}
+2025-11-30 11:39:15.818 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:39:15.819 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:39:15.819 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 12 - Кирилл - 42
+2025-11-30 11:39:15.819 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=12, Name=Кирилл, Age=42
+2025-11-30 11:39:15.819 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =12, name ='Кирилл', age =42}
+2025-11-30 11:39:15.819 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:39:15.820 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:39:15.820 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 3, Коваль, 51
+2025-11-30 11:39:15.820 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=3, Name=Коваль, Age=51
+2025-11-30 11:39:15.820 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =3, name ='Коваль', age =51}
+2025-11-30 11:39:15.820 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 7 - Дмитрий - 12
+2025-11-30 11:39:15.821 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=7, Name=Дмитрий, Age=12
+2025-11-30 11:39:15.821 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =7, name ='Дмитрий', age =12}
+2025-11-30 11:39:15.821 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 4
+2025-11-30 11:39:37.545 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:39:37.548 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 6
+2025-11-30 11:39:37.548 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Илья, 29
+2025-11-30 11:39:37.548 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=1, Name=Илья, Age=29
+2025-11-30 11:39:37.549 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =1, name ='Илья', age =29}
+2025-11-30 11:39:37.549 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:39:37.549 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:39:37.550 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 12 - Кирилл - 42
+2025-11-30 11:39:37.550 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=12, Name=Кирилл, Age=42
+2025-11-30 11:39:37.550 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =12, name ='Кирилл', age =42}
+2025-11-30 11:39:37.550 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:39:37.550 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:39:37.551 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 3, Коваль, 51
+2025-11-30 11:39:37.551 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=3, Name=Коваль, Age=51
+2025-11-30 11:39:37.551 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =3, name ='Коваль', age =51}
+2025-11-30 11:39:37.551 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 7 - Дмитрий - 12
+2025-11-30 11:39:37.551 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=7, Name=Дмитрий, Age=12
+2025-11-30 11:39:37.551 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId =7, name ='Дмитрий', age =12}
+2025-11-30 11:39:37.552 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 4
+2025-11-30 11:41:06.699 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:41:06.701 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 6
+2025-11-30 11:41:06.702 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Илья, 29
+2025-11-30 11:41:06.702 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=1, Name=Илья, Age=29
+2025-11-30 11:41:06.703 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 1, name = 'Илья', age = 29}
+2025-11-30 11:41:06.703 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:41:06.703 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:41:06.703 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 12 - Кирилл - 42
+2025-11-30 11:41:06.704 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=12, Name=Кирилл, Age=42
+2025-11-30 11:41:06.704 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 12, name = 'Кирилл', age = 42}
+2025-11-30 11:41:06.704 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:41:06.704 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:41:06.704 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 3, Коваль, 51
+2025-11-30 11:41:06.704 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=3, Name=Коваль, Age=51
+2025-11-30 11:41:06.705 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 3, name = 'Коваль', age = 51}
+2025-11-30 11:41:06.705 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 7 - Дмитрий - 12
+2025-11-30 11:41:06.705 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=7, Name=Дмитрий, Age=12
+2025-11-30 11:41:06.705 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 7, name = 'Дмитрий', age = 12}
+2025-11-30 11:41:06.706 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 4
+2025-11-30 11:41:39.692 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/students.txt
+2025-11-30 11:41:39.695 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - File read successfully. Total lines: 8
+2025-11-30 11:41:39.696 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 1, Илья, 29
+2025-11-30 11:41:39.697 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=1, Name=Илья, Age=29
+2025-11-30 11:41:39.697 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 1, name = 'Илья', age = 29}
+2025-11-30 11:41:39.697 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:41:39.697 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:41:39.698 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 12 - Кирилл - 42
+2025-11-30 11:41:39.698 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=12, Name=Кирилл, Age=42
+2025-11-30 11:41:39.698 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 12, name = 'Кирилл', age = 42}
+2025-11-30 11:41:39.698 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 1-232323 ddwadawd
+2025-11-30 11:41:39.698 [main] DEBUG gergert.task1.validator.impl.StudentValidatorImpl - Line  is empty or null
+2025-11-30 11:41:39.698 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: 
+2025-11-30 11:41:39.699 [main] WARN  gergert.task1.reader.impl.StudentReaderImpl - Skipping invalid line: sdz 1212 wdq2w
+2025-11-30 11:41:39.699 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 3, Коваль, 51
+2025-11-30 11:41:39.699 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=3, Name=Коваль, Age=51
+2025-11-30 11:41:39.699 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 3, name = 'Коваль', age = 51}
+2025-11-30 11:41:39.699 [main] INFO  gergert.task1.parser.impl.StudentParserImpl - Parsing line: 7 - Дмитрий - 12
+2025-11-30 11:41:39.699 [main] DEBUG com.gergert.task1.factory.StudentFactory - Creating a student: ID=7, Name=Дмитрий, Age=12
+2025-11-30 11:41:39.700 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Student created successfully: Student{studentId = 7, name = 'Дмитрий', age = 12}
+2025-11-30 11:41:39.700 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Finished processing. Total valid students: 4
