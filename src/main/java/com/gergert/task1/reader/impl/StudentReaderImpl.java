@@ -4,7 +4,6 @@ import com.gergert.task1.entity.Student;
 import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.parser.impl.StudentParserImpl;
 import com.gergert.task1.reader.StudentReader;
-import com.gergert.task1.validator.impl.StudentValidatorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
