@@ -417,3 +417,5 @@
 2025-11-30 14:49:26.825 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - File not found: data/does_not_exist.txt
 2025-11-30 14:49:49.592 [main] INFO  gergert.task1.reader.impl.StudentReaderImpl - Reading file: data/file.txt
 2025-11-30 14:49:49.595 [main] ERROR gergert.task1.reader.impl.StudentReaderImpl - File not found: data/file.txt
+2025-12-01 14:51:42.915 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Selection sort finished
+2025-12-01 14:51:42.931 [main] INFO  gergert.task1.service.impl.SortStudentServiceImpl - Bubble sort finished

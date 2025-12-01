@@ -14,13 +14,8 @@ public class SortStudentServiceImpl implements SortStudentService {
     @Override
     public Student[] bubbleSortById(Student[] students) throws CustomException {
         if (students == null || students.length == 0){
-            logger.error("Attempt to calculate sum in empty array");
+            logger.error("Attempt to sort empty array");
             throw new CustomException("Array is empty or null");
-        }
-
-        if (students[0] == null) {
-            logger.error("First element is null");
-            throw new CustomException("First element is null");
         }
 
         Student[] sortedStudents = Arrays.copyOf(students, students.length);
@@ -30,7 +25,7 @@ public class SortStudentServiceImpl implements SortStudentService {
         for (int i = 0; i < sortedStudents.length - 1; i++){
             swapped = false;
             for (int j = 0; j < sortedStudents.length - i - 1; j++){
-                if (sortedStudents[i] != null && sortedStudents[i + 1] != null ){
+                if (sortedStudents[j] != null && sortedStudents[j + 1] != null){
                     if (sortedStudents[j].getStudentId() > sortedStudents[j + 1].getStudentId()) {
                         Student temp = sortedStudents[j];
                         sortedStudents[j] = sortedStudents[j + 1];
