@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ArraySortServiceImplTest {
 
-    private final ArraySortServiceImpl sortService = new ArraySortServiceImpl();
+    ArraySortServiceImpl sortService = new ArraySortServiceImpl();
 
     @Test
     void bubbleSort() throws CustomException {

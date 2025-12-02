@@ -19,3 +19,14 @@
 2025-12-02 19:58:39.629 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Bubble Sort finished, sorted array: [2, 8, 21, 23, 63]
 2025-12-02 19:58:39.644 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Selection Sort
 2025-12-02 19:58:39.645 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Selection Sort finished, sorted array: [1, 2, 9, 12, 23, 72]
+2025-12-02 20:22:30.729 [main] INFO  gergert.task1.reader.impl.ReadDataFromFileImpl - Attempting to read file from path: C:\Users\Gergert\AppData\Local\Temp\junit11495671169521782953\test_arrays.txt
+2025-12-02 20:22:30.733 [main] INFO  gergert.task1.reader.impl.ReadDataFromFileImpl - Success on reading file
+2025-12-02 20:24:03.190 [main] INFO  gergert.task1.reader.impl.ReadDataFromFileImpl - Attempting to read file from path: C:\Users\Gergert\AppData\Local\Temp\junit3213296284202927401\test_arrays.txt
+2025-12-02 20:24:03.193 [main] INFO  gergert.task1.reader.impl.ReadDataFromFileImpl - Success on reading file
+2025-12-02 20:26:37.196 [main] INFO  gergert.task1.reader.impl.ReadDataFromFileImpl - Attempting to read file from path: path/that/does/not/exist.txt
+2025-12-02 20:26:37.200 [main] ERROR gergert.task1.reader.impl.ReadDataFromFileImpl - File not found
+2025-12-02 20:34:01.264 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: MyArray entity is null
+2025-12-02 20:34:57.038 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: Array is empty
+2025-12-02 20:34:57.050 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: MyArray entity is null
+2025-12-02 20:37:02.340 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: Array is empty
+2025-12-02 20:37:02.347 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: MyArray entity is null
