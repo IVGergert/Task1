@@ -5,3 +5,17 @@
 2025-12-02 19:20:40.710 [main] INFO  gergert.task1.service.impl.ArrayCalculationServiceImpl - Max value in the array: 342
 2025-12-02 19:20:40.722 [main] INFO  gergert.task1.service.impl.ArrayCalculationServiceImpl - Min value in the array: 4
 2025-12-02 19:20:40.725 [main] INFO  gergert.task1.service.impl.ArrayCalculationServiceImpl - Sum: 29
+2025-12-02 19:57:21.999 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Bubble Sort
+2025-12-02 19:57:22.003 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Bubble Sort finished
+2025-12-02 19:57:22.023 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Selection Sort
+2025-12-02 19:57:22.024 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Selection Sort finished
+2025-12-02 19:57:47.900 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Selection Sort
+2025-12-02 19:57:47.903 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Selection Sort finished
+2025-12-02 19:57:49.241 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Bubble Sort
+2025-12-02 19:57:49.244 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Bubble Sort finished
+2025-12-02 19:57:49.258 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Selection Sort
+2025-12-02 19:57:49.258 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Selection Sort finished
+2025-12-02 19:58:39.625 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Bubble Sort
+2025-12-02 19:58:39.629 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Bubble Sort finished, sorted array: [2, 8, 21, 23, 63]
+2025-12-02 19:58:39.644 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Starting Selection Sort
+2025-12-02 19:58:39.645 [main] INFO  gergert.task1.service.impl.ArraySortServiceImpl - Selection Sort finished, sorted array: [1, 2, 9, 12, 23, 72]

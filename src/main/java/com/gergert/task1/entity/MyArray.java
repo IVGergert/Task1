@@ -22,6 +22,10 @@ public class MyArray {
         this.array = array;
     }
 
+    public int getSize() {
+        return array.length;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o){

@@ -1,5 +1,8 @@
 package com.gergert.task1.validator;
 
-public interface ArrayValidator {
+import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.exception.CustomException;
 
+public interface ArrayValidator {
+    void validate(MyArray myArray) throws CustomException;
 }

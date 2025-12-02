@@ -3,19 +3,19 @@ package com.gergert.task1.service.impl;
 import com.gergert.task1.entity.MyArray;
 import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.service.ArrayCalculationService;
-import com.gergert.task1.validator.impl.ArrayCheckerImpl;
+import com.gergert.task1.validator.impl.ArrayValidatorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.OptionalInt;
 
 public class ArrayCalculationServiceImpl implements ArrayCalculationService {
-    private static final Logger logger = LogManager.getLogger();
-    private final ArrayCheckerImpl checker = new ArrayCheckerImpl();
+    private static final Logger logger = LogManager.getLogger(ArrayCalculationServiceImpl.class);
+    private final ArrayValidatorImpl validator = new ArrayValidatorImpl();
 
     @Override
     public OptionalInt findMin(MyArray myArray) throws CustomException {
-        checker.checkArray(myArray);
+        validator.validate(myArray);
 
         int[] array = myArray.getArray();
 
@@ -33,7 +33,7 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
 
     @Override
     public OptionalInt findMax(MyArray myArray) throws CustomException {
-        checker.checkArray(myArray);
+        validator.validate(myArray);
 
         int[] array = myArray.getArray();
 
@@ -51,7 +51,7 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
 
     @Override
     public int findSum(MyArray myArray) throws CustomException {
-        checker.checkArray(myArray);
+        validator.validate(myArray);
 
         int[] array = myArray.getArray();
 
