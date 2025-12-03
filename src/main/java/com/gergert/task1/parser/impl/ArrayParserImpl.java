@@ -20,7 +20,7 @@ public class ArrayParserImpl implements ArrayParser {
             return factory.createArray(new int[0]);
         }
 
-        String[] parts = line.trim().split(DELIMITER_REGEX);
+        String[] parts = line.strip().split(DELIMITER_REGEX);
 
         int[] numbers = new int[parts.length];
 
@@ -28,8 +28,7 @@ public class ArrayParserImpl implements ArrayParser {
             numbers[i] = Integer.parseInt(parts[i]);
         }
 
-        logger.info("Parsed result:: {}", numbers);
+        logger.info("Parsed result: {}", numbers);
         return factory.createArray(numbers);
-
     }
 }
