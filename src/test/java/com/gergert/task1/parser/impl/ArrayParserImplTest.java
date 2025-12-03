@@ -16,6 +16,5 @@ class ArrayParserImplTest {
 
         MyArray result = parser.parse(line);
         assertEquals(expected, result);
-
     }
 }

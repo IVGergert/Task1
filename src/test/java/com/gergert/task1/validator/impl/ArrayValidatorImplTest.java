@@ -26,7 +26,6 @@ class ArrayValidatorImplTest {
         });
     }
 
-
     @Test
     void validateSuccess() {
         MyArray validArray = new MyArray(new int[]{1, 2, 3});

@@ -27,13 +27,4 @@ class InputStringValidatorImplTest {
         boolean result = validator.isValid("           ");
         assertFalse(result);
     }
-
-
-
-
-
-
-
-
-
 }
