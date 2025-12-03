@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class ReadDataFromFileImpl implements ReadDataFromFile {
-    private static final Logger logger = LogManager.getLogger(ReadDataFromFileImpl.class);
+    private static final Logger logger = LogManager.getLogger();
 
     @Override
     public List<String> readLines(String filePath) throws CustomException {

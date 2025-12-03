@@ -7,7 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ArrayParserImpl implements ArrayParser {
-    private static final Logger logger = LogManager.getLogger(ArrayParserImpl.class);
+    private static final Logger logger = LogManager.getLogger();
     private final ArrayFactoryImpl factory = new ArrayFactoryImpl();
 
     private static final String DELIMITER_REGEX = "[\\s,;\\-]+";

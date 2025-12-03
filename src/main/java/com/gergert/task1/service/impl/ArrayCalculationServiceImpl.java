@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.OptionalInt;
 
 public class ArrayCalculationServiceImpl implements ArrayCalculationService {
-    private static final Logger logger = LogManager.getLogger(ArrayCalculationServiceImpl.class);
+    private static final Logger logger = LogManager.getLogger();
     private final ArrayValidatorImpl validator = new ArrayValidatorImpl();
 
     @Override
