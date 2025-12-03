@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Arrays;
 
-public class ArrayFactoryImpl implements ArrayFactory {
+public class ArrayFactoryImpl implements ArrayFactory  {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
