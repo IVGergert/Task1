@@ -15,7 +15,7 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
 
     @Override
     public OptionalInt findMin(MyArray myArray) throws CustomException {
-        validator.validate(myArray);
+        validator.validateArray(myArray);
 
         int[] array = myArray.getArray();
 
@@ -33,7 +33,7 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
 
     @Override
     public OptionalInt findMax(MyArray myArray) throws CustomException {
-        validator.validate(myArray);
+        validator.validateArray(myArray);
 
         int[] array = myArray.getArray();
 
@@ -51,7 +51,7 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
 
     @Override
     public int findSum(MyArray myArray) throws CustomException {
-        validator.validate(myArray);
+        validator.validateArray(myArray);
 
         int[] array = myArray.getArray();
 

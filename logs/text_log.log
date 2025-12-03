@@ -30,3 +30,20 @@
 2025-12-02 20:34:57.050 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: MyArray entity is null
 2025-12-02 20:37:02.340 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: Array is empty
 2025-12-02 20:37:02.347 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: MyArray entity is null
+2025-12-02 21:13:12.659 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: 1, 2; 3 - 4
+2025-12-03 14:34:25.118 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: 1, 2; 3 - 4
+2025-12-03 14:34:25.145 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: null
+2025-12-03 14:36:45.270 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line:            
+2025-12-03 14:36:45.294 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: 1, 2; 3 - 4
+2025-12-03 14:36:45.298 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: null
+2025-12-03 15:21:10.691 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: Array is empty
+2025-12-03 15:21:10.695 [main] ERROR gergert.task1.validator.impl.ArrayValidatorImpl - Check failed: MyArray entity is null
+2025-12-03 15:24:42.631 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: 1 - 2 - 3
+2025-12-03 15:25:56.010 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: 1 - 2 - 3
+2025-12-03 15:25:56.013 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Successful parsed line, result: [1, 2, 3]
+2025-12-03 15:27:43.486 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: 1 - 2 - 3
+2025-12-03 15:27:43.489 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Successful parsed line, result: [1, 2, 3]
+2025-12-03 15:27:43.489 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3]
+2025-12-03 15:28:14.309 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: 1 - 2 - 3
+2025-12-03 15:28:14.312 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Successful parsed line, result: [1, 2, 3]
+2025-12-03 15:28:14.312 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3]

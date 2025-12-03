@@ -16,21 +16,21 @@ public class ReadDataFromFileImpl implements ReadDataFromFile {
 
     @Override
     public List<String> readLines(String filePath) throws CustomException {
-        logger.info("Attempting to read file from path: {}", filePath);
+        logger.info("Reading file: {}", filePath);
 
         Path path = Paths.get(filePath);
 
-        if (Files.exists(path)){
-            try {
-                logger.info("Success on reading file");
-                return Files.readAllLines(path);
-            } catch (IOException e) {
-                logger.error("IO Exception while reading file: {}", filePath, e);
-                throw new CustomException("Error reading file: " + e.getMessage(), e);
-            }
-        } else {
-            logger.error("File not found");
+        if (!Files.exists(path)) {
+            logger.error("File not found at path: {}", filePath);
             throw new CustomException("File not found: " + filePath);
+        }
+
+        try {
+            logger.info("Success on reading file");
+            return Files.readAllLines(path);
+        } catch (IOException e) {
+            logger.error("IO Exception while reading file: {}", filePath, e);
+            throw new CustomException("Error reading file: " + e.getMessage(), e);
         }
     }
 }

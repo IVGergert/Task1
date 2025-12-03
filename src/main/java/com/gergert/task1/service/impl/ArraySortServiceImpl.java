@@ -13,7 +13,7 @@ public class ArraySortServiceImpl implements ArraySortService {
 
     @Override
     public void bubbleSort(MyArray myArray) throws CustomException {
-        validator.validate(myArray);
+        validator.validateArray(myArray);
 
         logger.info("Starting Bubble Sort");
 
@@ -42,7 +42,7 @@ public class ArraySortServiceImpl implements ArraySortService {
 
     @Override
     public void selectionSort(MyArray myArray) throws CustomException {
-        validator.validate(myArray);
+        validator.validateArray(myArray);
 
         logger.info("Starting Selection Sort");
 

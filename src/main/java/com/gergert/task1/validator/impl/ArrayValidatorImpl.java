@@ -10,7 +10,7 @@ public class ArrayValidatorImpl implements ArrayValidator {
     private static final Logger logger = LogManager.getLogger(ArrayValidatorImpl.class);
 
     @Override
-    public void validate(MyArray myArray) throws CustomException {
+    public void validateArray(MyArray myArray) throws CustomException {
         if (myArray == null) {
             logger.error("Check failed: MyArray entity is null");
             throw new CustomException("Array entity cannot be null");
