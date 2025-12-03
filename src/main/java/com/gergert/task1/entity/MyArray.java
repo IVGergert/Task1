@@ -15,10 +15,7 @@ public class MyArray {
         return Arrays.copyOf(array, array.length);
     }
 
-    public void setArray(int[] array) throws CustomException {
-        if (array == null) {
-            throw new CustomException("Array cannot be null");
-        }
+    public void setArray(int[] array) {
         this.array = array;
     }
 
