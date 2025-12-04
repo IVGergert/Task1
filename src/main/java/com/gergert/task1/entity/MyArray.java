@@ -1,7 +1,5 @@
 package com.gergert.task1.entity;
 
-import com.gergert.task1.exception.CustomException;
-
 import java.util.Arrays;
 
 public class MyArray {
