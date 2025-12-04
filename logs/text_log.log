@@ -47,3 +47,16 @@
 2025-12-03 15:28:14.309 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: 1 - 2 - 3
 2025-12-03 15:28:14.312 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Successful parsed line, result: [1, 2, 3]
 2025-12-03 15:28:14.312 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3]
+2025-12-04 13:23:45.721 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: 1 - 2 - 3
+2025-12-04 13:23:45.725 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsed result: [1, 2, 3]
+2025-12-04 13:41:54.260 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: dadasd1 - 23sdwae22 1212 3
+2025-12-04 13:41:54.263 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: dadasd1 - 23sdwae22 1212 3
+2025-12-04 13:41:54.263 [main] WARN  gergert.task1.validator.impl.InputStringValidatorImpl - Validation failed. Not a number: 'dadasd1' in line: dadasd1 - 23sdwae22 1212 3
+2025-12-04 13:41:54.263 [main] ERROR gergert.task1.parser.impl.ArrayParserImpl - Invalid line format: dadasd1 - 23sdwae22 1212 3
+2025-12-04 13:41:54.292 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: 1 - 2 - 3
+2025-12-04 13:41:54.292 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: 1 - 2 - 3
+2025-12-04 13:41:54.292 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsed result: [1, 2, 3]
+2025-12-04 13:46:43.737 [main] INFO  gergert.task1.parser.impl.ArrayParserImpl - Parsing line: dadasd1 - 23sdwae22 1212 3
+2025-12-04 13:46:43.740 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: dadasd1 - 23sdwae22 1212 3
+2025-12-04 13:46:43.741 [main] WARN  gergert.task1.validator.impl.InputStringValidatorImpl - Validation failed. Not a number: 'dadasd1' in line: dadasd1 - 23sdwae22 1212 3
+2025-12-04 13:46:43.741 [main] ERROR gergert.task1.parser.impl.ArrayParserImpl - Invalid line format: dadasd1 - 23sdwae22 1212 3

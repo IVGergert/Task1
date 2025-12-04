@@ -17,20 +17,20 @@ public class InputStringValidatorImpl implements InputStringValidator {
         logger.info("Validation line: {}", line);
 
         if (line == null || line.isBlank()) {
+            logger.debug("Validation failed: line is null or empty");
             return false;
         }
 
-        String[] parts = DELIMITER_PATTERN.split(line.trim());
+        String[] parts = DELIMITER_PATTERN.split(line.strip());
 
         for (String part : parts) {
-            boolean isNumber = NUMBER_PATTERN.matcher(part).matches();
-
-            if (!isNumber) {
+            if (!NUMBER_PATTERN.matcher(part).matches()) {
                 logger.warn("Validation failed. Not a number: '{}' in line: {}", part, line);
                 return false;
             }
         }
 
+        logger.debug("Validation successful for line: {}", line);
         return true;
     }
 }

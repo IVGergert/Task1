@@ -1,34 +1,35 @@
 package com.gergert.task1.parser.impl;
 
-import com.gergert.task1.entity.MyArray;
-import com.gergert.task1.factory.impl.ArrayFactoryImpl;
+import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.parser.ArrayParser;
+import com.gergert.task1.validator.impl.InputStringValidatorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ArrayParserImpl implements ArrayParser {
     private static final Logger logger = LogManager.getLogger();
-    private final ArrayFactoryImpl factory = new ArrayFactoryImpl();
+    private final InputStringValidatorImpl validator = new InputStringValidatorImpl();
 
     private static final String DELIMITER_REGEX = "[\\s,;\\-]+";
 
     @Override
-    public MyArray parse(String line) {
+    public int[] parse(String line) throws CustomException {
         logger.info("Parsing line: {}", line);
 
-        if (line.isBlank()) {
-            return factory.createArray(new int[0]);
+        if (!validator.isValid(line)){
+            logger.error("Invalid line format: {}", line);
+            throw new CustomException("Invalid line format: " + line);
         }
 
         String[] parts = line.strip().split(DELIMITER_REGEX);
 
-        int[] numbers = new int[parts.length];
+        int[] array = new int[parts.length];
 
         for (int i = 0; i < parts.length; i++){
-            numbers[i] = Integer.parseInt(parts[i]);
+            array[i] = Integer.parseInt(parts[i]);
         }
 
-        logger.info("Parsed result: {}", numbers);
-        return factory.createArray(numbers);
+        logger.info("Parsed result: {}", array);
+        return array;
     }
 }

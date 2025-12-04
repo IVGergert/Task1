@@ -22,7 +22,7 @@ public class ReadDataFromFileImpl implements ReadDataFromFile {
 
         if (!Files.exists(path)) {
             logger.error("File not found at path: {}", filePath);
-            throw new CustomException("File not found: " + filePath);
+            throw new CustomException("File not found at path: " + filePath);
         }
 
         try {

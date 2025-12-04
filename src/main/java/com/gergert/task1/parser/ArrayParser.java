@@ -1,7 +1,7 @@
 package com.gergert.task1.parser;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.exception.CustomException;
 
 public interface ArrayParser {
-    MyArray parse(String line);
+    int[] parse(String line) throws CustomException;
 }
