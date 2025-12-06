@@ -3,22 +3,26 @@ package com.gergert.task1.entity;
 import java.util.Arrays;
 
 public class MyArray {
-    private int[] array;
+    private final int id;
+    private String name;
+    private int[] elements;
 
-    public MyArray(int[] array) {
-        this.array = array;
+    public MyArray(int id, String name,int[] elements) {
+        this.id = id;
+        this.name = name;
+        this.elements = elements;
     }
 
     public int[] getArray() {
-        return Arrays.copyOf(array, array.length);
+        return Arrays.copyOf(elements, elements.length);
     }
 
-    public void setArray(int[] array) {
-        this.array = array;
+    public void setArray(int[] elements) {
+        this.elements = elements;
     }
 
     public int getSize() {
-        return array.length;
+        return elements.length;
     }
 
     @Override
@@ -33,18 +37,18 @@ public class MyArray {
 
         MyArray that = (MyArray) o;
 
-        return Arrays.equals(array, that.array);
+        return Arrays.equals(elements, that.elements);
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(array);
+        return Arrays.hashCode(elements);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("MyArray { ");
-        sb.append("array = ").append(Arrays.toString(array));
+        sb.append("array = ").append(Arrays.toString(elements));
         sb.append('}');
         return sb.toString();
     }
