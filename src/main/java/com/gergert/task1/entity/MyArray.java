@@ -1,28 +1,44 @@
 package com.gergert.task1.entity;
 
+import com.gergert.task1.observer.ArrayObservable;
+import com.gergert.task1.observer.ArrayObserver;
+
 import java.util.Arrays;
 
-public class MyArray {
+public class MyArray implements ArrayObservable {
     private final int id;
-    private String name;
-    private int[] elements;
+    private int[] array;
 
-    public MyArray(int id, String name,int[] elements) {
+    private ArrayObserver observer;
+
+    public MyArray(int id, int[] array) {
         this.id = id;
-        this.name = name;
-        this.elements = elements;
+        this.array = array;
     }
 
     public int[] getArray() {
-        return Arrays.copyOf(elements, elements.length);
+        return Arrays.copyOf(array, array.length);
     }
 
-    public void setArray(int[] elements) {
-        this.elements = elements;
+    public int getFirstElement() {
+        return (array != null && array.length > 0) ? array[0] : 0;
+    }
+
+    public void setArray(int[] array) {
+        this.array = array;
+        notifyArrayObservers();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public ArrayObserver getObserver() {
+        return observer;
     }
 
     public int getSize() {
-        return elements.length;
+        return array.length;
     }
 
     @Override
@@ -37,19 +53,38 @@ public class MyArray {
 
         MyArray that = (MyArray) o;
 
-        return Arrays.equals(elements, that.elements);
+        return Arrays.equals(array, that.array);
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(elements);
+        return Arrays.hashCode(array);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("MyArray { ");
-        sb.append("array = ").append(Arrays.toString(elements));
+        sb.append("array = ").append(Arrays.toString(array));
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public void addArrayObserver(ArrayObserver observer) {
+        this.observer = observer;
+    }
+
+    @Override
+    public void removeArrayObserver(ArrayObserver observer) {
+        if (this.observer == observer) {
+            this.observer = null;
+        }
+    }
+
+    @Override
+    public void notifyArrayObservers() {
+        if (observer != null) {
+            observer.update(this);
+        }
     }
 }
