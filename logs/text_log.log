@@ -60,3 +60,28 @@
 2025-12-04 13:46:43.740 [main] INFO  gergert.task1.validator.impl.InputStringValidatorImpl - Validation line: dadasd1 - 23sdwae22 1212 3
 2025-12-04 13:46:43.741 [main] WARN  gergert.task1.validator.impl.InputStringValidatorImpl - Validation failed. Not a number: 'dadasd1' in line: dadasd1 - 23sdwae22 1212 3
 2025-12-04 13:46:43.741 [main] ERROR gergert.task1.parser.impl.ArrayParserImpl - Invalid line format: dadasd1 - 23sdwae22 1212 3
+2025-12-06 13:10:19.670 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=2, min=1, avg=1.5, sum=3]
+2025-12-06 13:10:19.675 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=30, min=10, avg=20.0, sum=60]
+2025-12-06 13:11:18.255 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=3, min=1, avg=2.0, sum=6]
+2025-12-06 13:11:18.260 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=30, min=10, avg=20.0, sum=60]
+2025-12-06 13:17:16.776 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=2, min=1, avg=1.5, sum=3]
+2025-12-06 13:17:16.782 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=30, min=10, avg=20.0, sum=60]
+2025-12-06 13:18:36.222 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=2, min=1, avg=1.5, sum=3]
+2025-12-06 13:18:36.224 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=30, min=10, avg=20.0, sum=60]
+2025-12-06 13:19:23.752 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=2, min=1, avg=1.5, sum=3]
+2025-12-06 13:19:23.756 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=30, min=10, avg=20.0, sum=60]
+2025-12-06 13:28:53.223 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=2, min=1, avg=1.5, sum=3]
+2025-12-06 13:28:53.227 [main] DEBUG com.gergert.task1.entity.MyArray - Setting value 10 at index: 2.
+2025-12-06 13:28:53.228 [main] DEBUG com.gergert.task1.entity.MyArray - Validating array bounds.
+2025-12-06 13:28:53.228 [main] ERROR com.gergert.task1.entity.MyArray - Index out of bound: 2
+2025-12-06 13:28:53.228 [main] ERROR com.gergert.task1.entity.MyArray - Failed to set value: index 2 out of bounds.
+2025-12-06 13:29:09.623 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=2, min=1, avg=1.5, sum=3]
+2025-12-06 13:29:09.626 [main] DEBUG com.gergert.task1.entity.MyArray - Setting value 10 at index: 1.
+2025-12-06 13:29:09.626 [main] DEBUG com.gergert.task1.entity.MyArray - Validating array bounds.
+2025-12-06 13:29:09.626 [main] TRACE com.gergert.task1.entity.MyArray - Bounds validation passed.
+2025-12-06 13:29:09.627 [main] INFO  com.gergert.task1.entity.MyArray - Successfully set value by index: 1
+2025-12-06 13:29:09.627 [main] DEBUG com.gergert.task1.entity.MyArray - Notifying observers for array ID: 1.
+2025-12-06 13:29:09.627 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=10, min=1, avg=5.5, sum=11]
+2025-12-06 13:52:55.945 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=5, min=1, avg=3.0, sum=15]
+2025-12-06 13:54:19.668 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Array with ID 101 is empty or null. Zeros saved.
+2025-12-06 13:55:37.820 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 102: ArrayData[max=-10, min=-20, avg=-15.0, sum=-30]

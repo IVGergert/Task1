@@ -1,15 +1,23 @@
 package com.gergert.task1.entity;
 
+import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.observer.ArrayObservable;
 import com.gergert.task1.observer.ArrayObserver;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Arrays;
 
 public class MyArray implements ArrayObservable {
-    private final int id;
+    private static final Logger logger = LogManager.getLogger();
+    private int id;
     private int[] array;
 
     private ArrayObserver observer;
+
+    public MyArray(int[] array) {
+        this.array = array;
+    }
 
     public MyArray(int id, int[] array) {
         this.id = id;
@@ -29,12 +37,23 @@ public class MyArray implements ArrayObservable {
         notifyArrayObservers();
     }
 
-    public int getId() {
-        return id;
+    public void setElement(int index, int value) throws CustomException {
+        logger.debug("Setting value {} at index: {}.", value, index);
+        boolean isValid = boundsValidator(index, array.length);
+
+        if (!isValid){
+            logger.error("Failed to set value: index {} out of bounds.", index);
+            throw new CustomException("Index out of bound: " + index);
+        }
+
+        logger.info("Successfully set value by index: {}", index);
+        array[index] = value;
+        logger.debug("Notifying observers for array ID: {}.", id);
+        notifyArrayObservers();
     }
 
-    public ArrayObserver getObserver() {
-        return observer;
+    public int getId() {
+        return id;
     }
 
     public int getSize() {
@@ -53,12 +72,12 @@ public class MyArray implements ArrayObservable {
 
         MyArray that = (MyArray) o;
 
-        return Arrays.equals(array, that.array);
+        return id == that.id;
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(array);
+        return Integer.hashCode(id);
     }
 
     @Override
@@ -86,5 +105,18 @@ public class MyArray implements ArrayObservable {
         if (observer != null) {
             observer.update(this);
         }
+    }
+
+    private boolean boundsValidator (int index, int arrayLength) {
+        logger.debug("Validating array bounds.");
+
+        int minIndex = 0;
+        if (index >= arrayLength || index < minIndex) {
+            logger.error("Index out of bound: {}", index);
+            return false;
+        }
+
+        logger.trace("Bounds validation passed.");
+        return true;
     }
 }
