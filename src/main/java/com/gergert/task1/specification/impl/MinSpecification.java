@@ -4,7 +4,8 @@ import com.gergert.task1.entity.ArrayData;
 import com.gergert.task1.entity.MyArray;
 import com.gergert.task1.specification.ArraySpecification;
 import com.gergert.task1.specification.SearchOperation;
-import com.gergert.task1.warehouse.Warehouse;
+import com.gergert.task1.warehouse.ArrayWarehouse;
+import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +22,7 @@ public class MinSpecification implements ArraySpecification {
     @Override
     public boolean specify(MyArray myArray) {
         int id = myArray.getId();
-        ArrayData data = Warehouse.getInstance().get(id);
+        ArrayData data = ArrayWarehouseImpl.getInstance().get(id);
 
         if (data == null) {
             logger.error("No statistics found in Warehouse for Array ID: {}", id);

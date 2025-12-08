@@ -11,7 +11,7 @@ public class ArrayFactoryImpl implements ArrayFactory {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
-    public MyArray createArray(int id,int[] array) {
+    public MyArray createArray(int id, int[] array) {
         logger.info("Creating array: {}", Arrays.toString(array));
         return new MyArray(1,array);
     }

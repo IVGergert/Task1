@@ -85,3 +85,21 @@
 2025-12-06 13:52:55.945 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=5, min=1, avg=3.0, sum=15]
 2025-12-06 13:54:19.668 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Array with ID 101 is empty or null. Zeros saved.
 2025-12-06 13:55:37.820 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 102: ArrayData[max=-10, min=-20, avg=-15.0, sum=-30]
+2025-12-08 15:19:17.000 [main] DEBUG com.gergert.task1.entity.MyArray - Attempting to set value 100 at index 5 for Array ID 1
+2025-12-08 15:19:17.004 [main] ERROR com.gergert.task1.entity.MyArray - Failed to set value: index 5 out of bounds.
+2025-12-08 15:19:17.004 [main] DEBUG com.gergert.task1.entity.MyArray - Attempting to set value 100 at index -1 for Array ID 1
+2025-12-08 15:19:17.004 [main] ERROR com.gergert.task1.entity.MyArray - Failed to set value: index -1 out of bounds.
+2025-12-08 15:19:17.008 [main] DEBUG com.gergert.task1.entity.MyArray - Attempting to set value 50 at index 0 for Array ID 1
+2025-12-08 15:19:17.008 [main] INFO  com.gergert.task1.entity.MyArray - Successfully set value by index: 0, Notifying observer
+2025-12-08 15:20:37.343 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=5, min=1, avg=3.0, sum=15]
+2025-12-08 15:20:37.358 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 101 is empty. Saving zeros to Warehouse.
+2025-12-08 15:20:37.360 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 102: ArrayData[max=-10, min=-20, avg=-15.0, sum=-30]
+2025-12-08 15:22:11.433 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 1: ArrayData[max=5, min=1, avg=3.0, sum=15]
+2025-12-08 15:22:11.446 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 101 is empty. Saving zeros to Warehouse.
+2025-12-08 15:22:11.448 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - New data successfully saved, for ID 102: ArrayData[max=-10, min=-20, avg=-15.0, sum=-30]
+2025-12-08 15:29:15.130 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [4, 5, 6]
+2025-12-08 15:29:15.162 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3, 4]
+2025-12-08 15:29:32.293 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [4, 5, 6]
+2025-12-08 15:29:32.320 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3, 4]
+2025-12-08 15:29:52.583 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [4, 5, 6]
+2025-12-08 15:29:52.598 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3, 4]

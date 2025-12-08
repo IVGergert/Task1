@@ -1,7 +1,6 @@
 package com.gergert.task1.service.impl;
 
 import com.gergert.task1.entity.MyArray;
-import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.service.ArrayCalculationService;
 import com.gergert.task1.validator.impl.ArrayValidatorImpl;
 import org.apache.logging.log4j.LogManager;

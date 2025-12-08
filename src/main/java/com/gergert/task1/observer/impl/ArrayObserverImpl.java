@@ -3,7 +3,8 @@ package com.gergert.task1.observer.impl;
 import com.gergert.task1.entity.ArrayData;
 import com.gergert.task1.entity.MyArray;
 import com.gergert.task1.observer.ArrayObserver;
-import com.gergert.task1.warehouse.Warehouse;
+import com.gergert.task1.warehouse.ArrayWarehouse;
+import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,9 +19,11 @@ public class ArrayObserverImpl implements ArrayObserver {
         int[] array = myArray.getArray();
         final int id = myArray.getId();
 
+        ArrayWarehouseImpl warehouse = ArrayWarehouseImpl.getInstance();
+
         if (array == null || array.length == 0){
-            Warehouse.getInstance().put(id, new ArrayData(0, 0, 0, 0));
-            logger.info("Array with ID {} is empty or null. Zeros saved.", id);
+            logger.warn("Array ID {} is empty. Saving zeros to Warehouse.", id);
+            warehouse.put(id, new ArrayData(0, 0, 0, 0));
             return;
         }
 
@@ -33,7 +36,7 @@ public class ArrayObserverImpl implements ArrayObserver {
                 (int) arrayStats.getSum()
         );
 
-        Warehouse.getInstance().put(id, data);
+        warehouse.put(id, data);
 
         logger.info("New data successfully saved, for ID {}: {}", id, data);
     }

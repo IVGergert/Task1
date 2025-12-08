@@ -2,7 +2,8 @@ package com.gergert.task1.observer.impl;
 
 import com.gergert.task1.entity.ArrayData;
 import com.gergert.task1.entity.MyArray;
-import com.gergert.task1.warehouse.Warehouse;
+import com.gergert.task1.warehouse.ArrayWarehouse;
+import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -18,7 +19,7 @@ class ArrayObserverImplTest {
 
         observer.update(myArray);
 
-        ArrayData data = Warehouse.getInstance().get(id);
+        ArrayData data = ArrayWarehouseImpl.getInstance().get(id);
 
         assertNotNull(data);
         assertEquals(15, data.sum());
@@ -34,7 +35,7 @@ class ArrayObserverImplTest {
 
         observer.update(myArray);
 
-        ArrayData data = Warehouse.getInstance().get(id);
+        ArrayData data = ArrayWarehouseImpl.getInstance().get(id);
         assertNotNull(data);
         assertEquals(0, data.sum());
         assertEquals(0.0, data.avg());
@@ -47,7 +48,7 @@ class ArrayObserverImplTest {
 
         observer.update(myArray);
 
-        ArrayData data = Warehouse.getInstance().get(id);
+        ArrayData data = ArrayWarehouseImpl.getInstance().get(id);
         assertEquals(-30, data.sum());
         assertEquals(-15.0, data.avg());
         assertEquals(-20, data.min());

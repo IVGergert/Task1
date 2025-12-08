@@ -3,7 +3,8 @@ package com.gergert.task1.specification.impl;
 import com.gergert.task1.entity.MyArray;
 import com.gergert.task1.specification.ArraySpecification;
 import com.gergert.task1.specification.SearchOperation;
-import com.gergert.task1.warehouse.Warehouse;
+import com.gergert.task1.warehouse.ArrayWarehouse;
+import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +22,7 @@ public class SumSpecification implements ArraySpecification {
     public boolean specify(MyArray myArray) {
         int id = myArray.getId();
 
-        double currentSum = Warehouse.getInstance().get(id).sum();
+        double currentSum = ArrayWarehouseImpl.getInstance().get(id).sum();
 
         logger.debug("Checking Array ID: {}. Current Sum: {} {} Target: {}", id, currentSum, operation, valueToCompare);
 
