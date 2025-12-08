@@ -19,8 +19,6 @@ public class MyArrayRepositoryImpl implements MyArrayRepository {
     private static MyArrayRepositoryImpl instance;
     private final List<MyArray> storage = new ArrayList<>();
 
-    private final Map<Integer, ArrayObserver> observerMap = new HashMap<>();
-
     private MyArrayRepositoryImpl(){
     }
 
