@@ -1,7 +1,7 @@
 package com.gergert.task1.repository.impl;
 
 import com.gergert.task1.entity.ArrayData;
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.specification.ArraySpecification;
 import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
@@ -28,13 +28,13 @@ class MyArrayRepositoryImplTest {
 
     @Test
     void add() throws CustomException {
-        MyArray myArray = new MyArray(1, new int[]{1, 2, 3});
+        CustomArray customArray = new CustomArray(1, new int[]{1, 2, 3});
 
-        repository.add(myArray);
+        repository.add(customArray);
 
-        Optional<MyArray> result = repository.findArrayById(1);
+        Optional<CustomArray> result = repository.findArrayById(1);
         assertTrue(result.isPresent());
-        assertEquals(myArray, result.get());
+        assertEquals(customArray, result.get());
 
         ArrayData warehouseData = ArrayWarehouseImpl.getInstance().get(1);
         assertNotNull(warehouseData);
@@ -43,8 +43,8 @@ class MyArrayRepositoryImplTest {
 
     @Test
     void addDuplicate() throws CustomException {
-        MyArray array1 = new MyArray(1, new int[]{1});
-        MyArray array2 = new MyArray(1, new int[]{2});
+        CustomArray array1 = new CustomArray(1, new int[]{1});
+        CustomArray array2 = new CustomArray(1, new int[]{2});
 
         repository.add(array1);
 
@@ -53,47 +53,47 @@ class MyArrayRepositoryImplTest {
 
     @Test
     void remove() throws CustomException {
-        MyArray myArray = new MyArray(1, new int[]{10, 20});
-        repository.add(myArray);
+        CustomArray customArray = new CustomArray(1, new int[]{10, 20});
+        repository.add(customArray);
 
         assertNotNull(ArrayWarehouseImpl.getInstance().get(1));
 
-        repository.remove(myArray);
+        repository.remove(customArray);
 
         assertFalse(repository.findArrayById(1).isPresent());
 
         assertNull(ArrayWarehouseImpl.getInstance().get(1));
 
-        myArray.setElement(0, 999);
+        customArray.setElement(0, 999);
         assertNull(ArrayWarehouseImpl.getInstance().get(1));
     }
 
     @Test
     void removeNonExistent() {
-        MyArray myArray = new MyArray(99, new int[]{1});
+        CustomArray myArray = new CustomArray(99, new int[]{1});
         assertThrows(CustomException.class, () -> repository.remove(myArray));
     }
 
     @Test
     void findArrayById() throws CustomException {
-        MyArray arr1 = new MyArray(10, new int[]{1});
-        MyArray arr2 = new MyArray(20, new int[]{2});
+        CustomArray arr1 = new CustomArray(10, new int[]{1});
+        CustomArray arr2 = new CustomArray(20, new int[]{2});
         repository.add(arr1);
         repository.add(arr2);
 
-        Optional<MyArray> found = repository.findArrayById(10);
+        Optional<CustomArray> found = repository.findArrayById(10);
         assertTrue(found.isPresent());
         assertEquals(10, found.get().getId());
 
-        Optional<MyArray> notFound = repository.findArrayById(99);
+        Optional<CustomArray> notFound = repository.findArrayById(99);
         assertFalse(notFound.isPresent());
     }
 
     @Test
     void query() throws CustomException {
-        repository.add(new MyArray(1, new int[]{1, 2, 3}));
-        repository.add(new MyArray(2, new int[]{10, 10}));
-        repository.add(new MyArray(3, new int[]{0, 0}));
+        repository.add(new CustomArray(1, new int[]{1, 2, 3}));
+        repository.add(new CustomArray(2, new int[]{10, 10}));
+        repository.add(new CustomArray(3, new int[]{0, 0}));
 
         ArraySpecification sumMoreThan10 = array -> {
             int sum = 0;
@@ -101,24 +101,24 @@ class MyArrayRepositoryImplTest {
             return sum > 10;
         };
 
-        List<MyArray> result = repository.query(sumMoreThan10);
+        List<CustomArray> result = repository.query(sumMoreThan10);
         assertEquals(1, result.size());
         assertEquals(2, result.get(0).getId());
     }
 
     @Test
     void sort() throws CustomException {
-        MyArray arr1 = new MyArray(3, new int[]{1,6,2});
-        MyArray arr2 = new MyArray(1, new int[]{1,9,2});
-        MyArray arr3 = new MyArray(2, new int[]{2,9,34});
+        CustomArray arr1 = new CustomArray(3, new int[]{1,6,2});
+        CustomArray arr2 = new CustomArray(1, new int[]{1,9,2});
+        CustomArray arr3 = new CustomArray(2, new int[]{2,9,34});
 
         repository.add(arr1);
         repository.add(arr2);
         repository.add(arr3);
 
-        Comparator<MyArray> idComparator = Comparator.comparingInt(MyArray::getId);
+        Comparator<CustomArray> idComparator = Comparator.comparingInt(CustomArray::getId);
 
-        List<MyArray> sorted = repository.sort(idComparator);
+        List<CustomArray> sorted = repository.sort(idComparator);
 
         assertEquals(1, sorted.get(0).getId());
         assertEquals(2, sorted.get(1).getId());
@@ -128,7 +128,7 @@ class MyArrayRepositoryImplTest {
     @Test
     void testIntegrationUpdate() throws CustomException {
         int id = 5;
-        MyArray array = new MyArray(id, new int[]{10, 20});
+        CustomArray array = new CustomArray(id, new int[]{10, 20});
         repository.add(array);
 
         array.setElement(0, 100);

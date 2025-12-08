@@ -1,6 +1,6 @@
 package com.gergert.task1.service.impl;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.service.ArrayCalculationService;
 import com.gergert.task1.validator.impl.ArrayValidatorImpl;
 import org.apache.logging.log4j.LogManager;
@@ -13,10 +13,10 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
     private final ArrayValidatorImpl validator = new ArrayValidatorImpl();
 
     @Override
-    public OptionalInt findMin(MyArray myArray){
-        validator.validateArray(myArray);
+    public OptionalInt findMin(CustomArray customArray){
+        validator.validateArray(customArray);
 
-        int[] array = myArray.getArray();
+        int[] array = customArray.getArray();
 
         int min = array[0];
 
@@ -31,10 +31,10 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
     }
 
     @Override
-    public OptionalInt findMax(MyArray myArray){
-        validator.validateArray(myArray);
+    public OptionalInt findMax(CustomArray customArray){
+        validator.validateArray(customArray);
 
-        int[] array = myArray.getArray();
+        int[] array = customArray.getArray();
 
         int max = array[0];
 
@@ -49,10 +49,10 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
     }
 
     @Override
-    public int findSum(MyArray myArray){
-        validator.validateArray(myArray);
+    public int findSum(CustomArray customArray){
+        validator.validateArray(customArray);
 
-        int[] array = myArray.getArray();
+        int[] array = customArray.getArray();
 
         int sum = 0;
 

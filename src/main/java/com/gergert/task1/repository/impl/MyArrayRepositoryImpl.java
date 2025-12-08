@@ -1,6 +1,6 @@
 package com.gergert.task1.repository.impl;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.observer.ArrayObserver;
 import com.gergert.task1.observer.impl.ArrayObserverImpl;
@@ -17,7 +17,7 @@ public class MyArrayRepositoryImpl implements MyArrayRepository {
     private static final Logger logger = LogManager.getLogger();
 
     private static MyArrayRepositoryImpl instance;
-    private final List<MyArray> storage = new ArrayList<>();
+    private final List<CustomArray> storage = new ArrayList<>();
 
     private MyArrayRepositoryImpl(){
     }
@@ -30,8 +30,8 @@ public class MyArrayRepositoryImpl implements MyArrayRepository {
     }
 
     @Override
-    public void add(MyArray myArray) throws CustomException {
-        final int id = myArray.getId();
+    public void add(CustomArray customArray) throws CustomException {
+        final int id = customArray.getId();
 
         if (findArrayById(id).isPresent()) {
             logger.error("Array with ID {} already exists.", id);
@@ -40,42 +40,42 @@ public class MyArrayRepositoryImpl implements MyArrayRepository {
 
         logger.info("Saved array ID {}", id);
 
-        storage.add(myArray);
+        storage.add(customArray);
         ArrayObserver observer = new ArrayObserverImpl();
-        myArray.addArrayObserver(observer);
-        myArray.notifyArrayObservers();
+        customArray.addArrayObserver(observer);
+        customArray.notifyArrayObservers();
 
         logger.info("Array ID {} successfully added.", id);
 
     }
 
     @Override
-    public void remove(MyArray myArray) throws CustomException {
-        final int id = myArray.getId();
+    public void remove(CustomArray customArray) throws CustomException {
+        final int id = customArray.getId();
 
-        if (!storage.contains(myArray)) {
+        if (!storage.contains(customArray)) {
             logger.error("Attempt to remove non-existent array ID {}", id);
             throw new CustomException("Array with ID " + id + " not found in repository.");
         }
 
-        storage.remove(myArray);
+        storage.remove(customArray);
         ArrayWarehouseImpl.getInstance().remove(id);
-        myArray.removeArrayObserver(null);
+        customArray.removeArrayObserver(null);
 
         logger.info("Array ID {} removed successfully.", id);
     }
 
     @Override
-    public Optional<MyArray> findArrayById(int id) {
+    public Optional<CustomArray> findArrayById(int id) {
         logger.debug("Find array with ID: {}", id);
 
         return storage.stream()
-                .filter(myArray -> myArray.getId() == id)
+                .filter(customArray -> customArray.getId() == id)
                 .findFirst();
     }
 
     @Override
-    public List<MyArray> query(ArraySpecification specification) {
+    public List<CustomArray> query(ArraySpecification specification) {
         logger.debug("Querying repository with specification: {}", specification.getClass().getSimpleName());
 
         return storage.stream()
@@ -84,10 +84,10 @@ public class MyArrayRepositoryImpl implements MyArrayRepository {
     }
 
     @Override
-    public List<MyArray> sort(Comparator<MyArray> comparator) {
+    public List<CustomArray> sort(Comparator<CustomArray> comparator) {
         logger.debug("Sorting repository");
 
-        List<MyArray> sortedList = new ArrayList<>(this.storage);
+        List<CustomArray> sortedList = new ArrayList<>(this.storage);
         sortedList.sort(comparator);
 
         return sortedList;

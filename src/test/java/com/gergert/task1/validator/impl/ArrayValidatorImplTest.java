@@ -1,6 +1,6 @@
 package com.gergert.task1.validator.impl;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.exception.CustomException;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +19,7 @@ class ArrayValidatorImplTest {
 
     @Test
     void validateWhenArrayEmpty() {
-        MyArray emptyArray = new MyArray(new int[0]);
+        CustomArray emptyArray = new CustomArray(new int[0]);
 
         assertThrows(CustomException.class, () -> {
             validator.validateArray(emptyArray);
@@ -28,7 +28,7 @@ class ArrayValidatorImplTest {
 
     @Test
     void validateSuccess() {
-        MyArray validArray = new MyArray(new int[]{1, 2, 3});
+        CustomArray validArray = new CustomArray(new int[]{1, 2, 3});
 
         assertDoesNotThrow(() -> {
             validator.validateArray(validArray);

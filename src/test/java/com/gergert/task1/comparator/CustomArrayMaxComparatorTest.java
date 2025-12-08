@@ -1,20 +1,20 @@
 package com.gergert.task1.comparator;
 
 import com.gergert.task1.entity.ArrayData;
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MyArrayMaxComparatorTest {
+class CustomArrayMaxComparatorTest {
 
-    MyArrayMaxComparator myArrayMaxComparator = new MyArrayMaxComparator();
+    CustomArrayMaxComparator myArrayMaxComparator = new CustomArrayMaxComparator();
 
     @Test
     void compareNormalArrays() {
-        MyArray arr1 = new MyArray(1, new int[]{1,5,7,2});
-        MyArray arr2 = new MyArray(2, new int[]{2,6});
+        CustomArray arr1 = new CustomArray(1, new int[]{1,5,7,2});
+        CustomArray arr2 = new CustomArray(2, new int[]{2,6});
 
         ArrayData data1 = new ArrayData(7, 0, 0, 0);
         ArrayWarehouseImpl.getInstance().put(arr1.getId(), data1);
@@ -29,8 +29,8 @@ class MyArrayMaxComparatorTest {
 
     @Test
     void compareEqualsIdArrays() {
-        MyArray arr1 = new MyArray(3, new int[]{1,5,2});
-        MyArray arr2 = new MyArray(3, new int[]{1,5,2});
+        CustomArray arr1 = new CustomArray(3, new int[]{1,5,2});
+        CustomArray arr2 = new CustomArray(3, new int[]{1,5,2});
 
         assertEquals(0, myArrayMaxComparator.compare(arr1, arr2));
     }

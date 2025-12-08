@@ -1,6 +1,6 @@
 package com.gergert.task1.factory.impl;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,17 +12,17 @@ class ArrayFactoryImplTest {
     @Test
     void testCreateArrayNotNull() {
         int[] expected = {1,2,3,4};
-        MyArray myArray = arrayFactory.createArray(1,expected);
+        CustomArray customArray = arrayFactory.createArray(1,expected);
 
-        assertNotNull(myArray);
+        assertNotNull(customArray);
     }
 
     @Test
     void testCreateArrayValues() {
         int[] data = {4, 5, 6};
-        MyArray myArray = arrayFactory.createArray(99, data);
+        CustomArray customArray = arrayFactory.createArray(99, data);
 
-        assertArrayEquals(data, myArray.getArray());
-        assertEquals(1, myArray.getId());
+        assertArrayEquals(data, customArray.getArray());
+        assertEquals(1, customArray.getId());
     }
 }

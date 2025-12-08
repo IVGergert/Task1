@@ -1,7 +1,7 @@
 package com.gergert.task1.observer.impl;
 
 import com.gergert.task1.entity.ArrayData;
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.observer.ArrayObserver;
 import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
@@ -14,9 +14,9 @@ public class ArrayObserverImpl implements ArrayObserver {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
-    public void update(MyArray myArray) {
-        int[] array = myArray.getArray();
-        final int id = myArray.getId();
+    public void update(CustomArray customArray) {
+        int[] array = customArray.getArray();
+        final int id = customArray.getId();
 
         ArrayWarehouseImpl warehouse = ArrayWarehouseImpl.getInstance();
 

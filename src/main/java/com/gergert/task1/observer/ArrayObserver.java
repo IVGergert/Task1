@@ -1,7 +1,7 @@
 package com.gergert.task1.observer;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 
 public interface ArrayObserver {
-    void update(MyArray myArray);
+    void update(CustomArray customArray);
 }

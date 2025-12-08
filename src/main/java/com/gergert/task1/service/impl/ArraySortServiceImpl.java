@@ -1,6 +1,6 @@
 package com.gergert.task1.service.impl;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.service.ArraySortService;
 import com.gergert.task1.validator.impl.ArrayValidatorImpl;
@@ -12,13 +12,13 @@ public class ArraySortServiceImpl implements ArraySortService {
     private final ArrayValidatorImpl arrayValidator = new ArrayValidatorImpl();
 
     @Override
-    public void bubbleSort(MyArray myArray) throws CustomException {
+    public void bubbleSort(CustomArray customArray) throws CustomException {
 
         logger.info("Starting Bubble Sort");
 
-        if (arrayValidator.validateArray(myArray)) {
+        if (arrayValidator.validateArray(customArray)) {
 
-            int[] array = myArray.getArray();
+            int[] array = customArray.getArray();
             boolean swapped;
 
             for (int i = 0; i < array.length - 1; i++) {
@@ -37,8 +37,8 @@ public class ArraySortServiceImpl implements ArraySortService {
                 }
             }
 
-            myArray.setArray(array);
-            logger.info("Bubble Sort finished, sorted array: {}", myArray.getArray());
+            customArray.setArray(array);
+            logger.info("Bubble Sort finished, sorted array: {}", customArray.getArray());
         } else {
             logger.error("failed Bubble Sort");
             throw new CustomException("failed Bubble Sort");
@@ -46,12 +46,12 @@ public class ArraySortServiceImpl implements ArraySortService {
     }
 
     @Override
-    public void selectionSort(MyArray myArray) throws CustomException{
+    public void selectionSort(CustomArray customArray) throws CustomException{
         logger.info("Starting Selection Sort");
 
-        if (arrayValidator.validateArray(myArray)) {
+        if (arrayValidator.validateArray(customArray)) {
 
-            int[] array = myArray.getArray();
+            int[] array = customArray.getArray();
 
             for (int i = 0; i < array.length - 1; i++) {
                 int minIndex = i;
@@ -65,9 +65,9 @@ public class ArraySortServiceImpl implements ArraySortService {
                 array[i] = temp;
             }
 
-            myArray.setArray(array);
+            customArray.setArray(array);
 
-            logger.info("Selection Sort finished, sorted array: {}", myArray.getArray());
+            logger.info("Selection Sort finished, sorted array: {}", customArray.getArray());
         } else {
             logger.error("failed Selection Sort");
             throw new CustomException("failed Selection Sort");

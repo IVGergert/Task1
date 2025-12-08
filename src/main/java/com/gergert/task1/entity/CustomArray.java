@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.Arrays;
 import java.util.StringJoiner;
 
-public class MyArray implements ArrayObservable {
+public class CustomArray implements ArrayObservable {
     private static final Logger logger = LogManager.getLogger();
 
     private int id;
@@ -17,15 +17,15 @@ public class MyArray implements ArrayObservable {
 
     private ArrayObserver observer;
 
-    public MyArray() {
+    public CustomArray() {
         this.array = new int[0];
     }
 
-    public MyArray(int[] array) {
+    public CustomArray(int[] array) {
         this.array = array;
     }
 
-    public MyArray(int id, int[] array) {
+    public CustomArray(int id, int[] array) {
         this.id = id;
         this.array = array;
     }
@@ -86,7 +86,7 @@ public class MyArray implements ArrayObservable {
             return false;
         }
 
-        MyArray that = (MyArray) o;
+        CustomArray that = (CustomArray) o;
 
         return id == that.id;
     }
@@ -98,7 +98,7 @@ public class MyArray implements ArrayObservable {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", MyArray.class.getSimpleName() + " [", "]")
+        return new StringJoiner(", ", CustomArray.class.getSimpleName() + " [", "]")
                 .add("id = " + id)
                 .add("array = " + Arrays.toString(array))
                 .toString();

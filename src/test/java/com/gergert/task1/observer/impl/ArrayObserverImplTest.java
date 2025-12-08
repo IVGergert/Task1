@@ -1,8 +1,7 @@
 package com.gergert.task1.observer.impl;
 
 import com.gergert.task1.entity.ArrayData;
-import com.gergert.task1.entity.MyArray;
-import com.gergert.task1.warehouse.ArrayWarehouse;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.junit.jupiter.api.Test;
 
@@ -15,9 +14,9 @@ class ArrayObserverImplTest {
     @Test
     void updateCalculatesCorrectStatistics() {
         int id = 1;
-        MyArray myArray = new MyArray(id, new int[] {1, 2, 3, 4, 5});
+        CustomArray customArray = new CustomArray(id, new int[] {1, 2, 3, 4, 5});
 
-        observer.update(myArray);
+        observer.update(customArray);
 
         ArrayData data = ArrayWarehouseImpl.getInstance().get(id);
 
@@ -31,9 +30,9 @@ class ArrayObserverImplTest {
     @Test
     void updateWithEmptyArray(){
         int id = 101;
-        MyArray myArray = new MyArray(id, new int[]{});
+        CustomArray customArray = new CustomArray(id, new int[]{});
 
-        observer.update(myArray);
+        observer.update(customArray);
 
         ArrayData data = ArrayWarehouseImpl.getInstance().get(id);
         assertNotNull(data);
@@ -44,9 +43,9 @@ class ArrayObserverImplTest {
     @Test
     void updateWithNegativeNumbers(){
         int id = 102;
-        MyArray myArray = new MyArray(id, new int[]{-10, -20});
+        CustomArray customArray = new CustomArray(id, new int[]{-10, -20});
 
-        observer.update(myArray);
+        observer.update(customArray);
 
         ArrayData data = ArrayWarehouseImpl.getInstance().get(id);
         assertEquals(-30, data.sum());

@@ -1,6 +1,6 @@
 package com.gergert.task1.specification.impl;
 
-import com.gergert.task1.entity.MyArray;
+import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.specification.ArraySpecification;
 import com.gergert.task1.specification.SearchOperation;
 import org.apache.logging.log4j.LogManager;
@@ -17,9 +17,9 @@ public class CountSpecification implements ArraySpecification {
     }
 
     @Override
-    public boolean specify(MyArray myArray) {
-        int id = myArray.getId();
-        int currentCount = myArray.getSize();
+    public boolean specify(CustomArray customArray) {
+        int id = customArray.getId();
+        int currentCount = customArray.getSize();
 
         logger.debug("Checking Count for ID {}: Current {} {} Target {}", id, currentCount, operation, targetCount);
 

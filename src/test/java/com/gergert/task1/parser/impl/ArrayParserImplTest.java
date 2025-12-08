@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class ArrayParserImplTest {
     ArrayParserImpl parser = new ArrayParserImpl();
 
-
     @Test
     void parseLineWithDashesSuccess() throws CustomException {
         String line = "1 - 2 - 3";
