@@ -10,10 +10,7 @@ import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class MyArrayRepositoryImpl implements MyArrayRepository {
@@ -21,6 +18,8 @@ public class MyArrayRepositoryImpl implements MyArrayRepository {
 
     private static MyArrayRepositoryImpl instance;
     private final List<MyArray> storage = new ArrayList<>();
+
+    private final Map<Integer, ArrayObserver> observerMap = new HashMap<>();
 
     private MyArrayRepositoryImpl(){
     }

@@ -3,7 +3,6 @@ package com.gergert.task1.observer.impl;
 import com.gergert.task1.entity.ArrayData;
 import com.gergert.task1.entity.MyArray;
 import com.gergert.task1.observer.ArrayObserver;
-import com.gergert.task1.warehouse.ArrayWarehouse;
 import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -38,6 +37,6 @@ public class ArrayObserverImpl implements ArrayObserver {
 
         warehouse.put(id, data);
 
-        logger.info("New data successfully saved, for ID {}: {}", id, data);
+        logger.info("Warehouse updated for ID {}: {}", id, data);
     }
 }

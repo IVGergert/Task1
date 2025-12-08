@@ -12,7 +12,7 @@ public class ArrayWarehouseImpl implements ArrayWarehouse{
     private static final Logger logger = LogManager.getLogger();
 
     private static ArrayWarehouseImpl instance;
-    private final Map<Integer, ArrayData> storage  = new HashMap<>();;
+    private final Map<Integer, ArrayData> storage = new HashMap<>();;
 
     private ArrayWarehouseImpl() {
     }

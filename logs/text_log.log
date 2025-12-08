@@ -103,3 +103,176 @@
 2025-12-08 15:29:32.320 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3, 4]
 2025-12-08 15:29:52.583 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [4, 5, 6]
 2025-12-08 15:29:52.598 [main] INFO  gergert.task1.factory.impl.ArrayFactoryImpl - Creating array: [1, 2, 3, 4]
+2025-12-08 17:13:24.409 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=5, min=1, avg=3.0, sum=15]
+2025-12-08 17:13:24.421 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 101 is empty. Saving zeros to Warehouse.
+2025-12-08 17:13:24.424 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 102: ArrayData[max=-10, min=-20, avg=-15.0, sum=-30]
+2025-12-08 17:21:16.447 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:21:16.451 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:21:16.452 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:21:16.474 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=3, min=1, avg=2.0, sum=6]
+2025-12-08 17:21:16.474 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:21:16.474 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:25:13.338 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:25:13.343 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:25:13.344 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:25:13.364 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=3, min=1, avg=2.0, sum=6]
+2025-12-08 17:25:13.365 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:25:13.365 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:25:13.377 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:25:13.377 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:25:13.377 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:25:13.378 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=1, min=1, avg=1.0, sum=1]
+2025-12-08 17:25:13.378 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:25:13.379 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:25:13.379 [main] ERROR gergert.task1.repository.impl.MyArrayRepositoryImpl - Array with ID 1 already exists.
+2025-12-08 17:25:20.787 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:25:20.791 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:25:20.792 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:25:20.811 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=1, min=1, avg=1.0, sum=1]
+2025-12-08 17:25:20.811 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:25:20.814 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:25:20.814 [main] ERROR gergert.task1.repository.impl.MyArrayRepositoryImpl - Array with ID 1 already exists.
+2025-12-08 17:26:39.056 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:26:39.060 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:26:39.061 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:26:39.079 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=20, min=10, avg=15.0, sum=30]
+2025-12-08 17:26:39.080 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:26:39.081 [main] INFO  gergert.task1.warehouse.impl.ArrayWarehouseImpl - Data removed from warehouse for ID: 1
+2025-12-08 17:26:39.081 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 removed successfully.
+2025-12-08 17:26:39.082 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:26:39.082 [main] DEBUG com.gergert.task1.entity.MyArray - Attempting to set value 999 at index 0 for Array ID 1
+2025-12-08 17:26:39.083 [main] INFO  com.gergert.task1.entity.MyArray - Successfully set value by index: 0, Notifying observer
+2025-12-08 17:26:39.083 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=999, min=20, avg=509.5, sum=1019]
+2025-12-08 17:27:46.005 [main] ERROR gergert.task1.repository.impl.MyArrayRepositoryImpl - Attempt to remove non-existent array ID 99
+2025-12-08 17:28:15.874 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 10
+2025-12-08 17:28:15.878 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 10
+2025-12-08 17:28:15.879 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 10.
+2025-12-08 17:28:15.898 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 10: ArrayData[max=1, min=1, avg=1.0, sum=1]
+2025-12-08 17:28:15.898 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 10 successfully added.
+2025-12-08 17:28:15.898 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 20
+2025-12-08 17:28:15.899 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 20
+2025-12-08 17:28:15.899 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 20.
+2025-12-08 17:28:15.899 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 20: ArrayData[max=2, min=2, avg=2.0, sum=2]
+2025-12-08 17:28:15.899 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 20 successfully added.
+2025-12-08 17:28:15.899 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 10
+2025-12-08 17:28:15.902 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 99
+2025-12-08 17:30:12.577 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:30:12.580 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:30:12.581 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:30:12.599 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=3, min=1, avg=2.0, sum=6]
+2025-12-08 17:30:12.599 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:30:12.600 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 2
+2025-12-08 17:30:12.600 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 2
+2025-12-08 17:30:12.600 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 2.
+2025-12-08 17:30:12.600 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 2: ArrayData[max=10, min=10, avg=10.0, sum=20]
+2025-12-08 17:30:12.600 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 2 successfully added.
+2025-12-08 17:30:12.600 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 3
+2025-12-08 17:30:12.601 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 3
+2025-12-08 17:30:12.601 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 3.
+2025-12-08 17:30:12.601 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 3: ArrayData[max=0, min=0, avg=0.0, sum=0]
+2025-12-08 17:30:12.601 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 3 successfully added.
+2025-12-08 17:30:12.602 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Querying repository with specification: MyArrayRepositoryImplTest$$Lambda/0x00000204b0216850
+2025-12-08 17:32:22.277 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 3
+2025-12-08 17:32:22.282 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 3
+2025-12-08 17:32:22.282 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 3.
+2025-12-08 17:32:22.284 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 3 is empty. Saving zeros to Warehouse.
+2025-12-08 17:32:22.284 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 3 successfully added.
+2025-12-08 17:32:22.284 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:32:22.284 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:32:22.285 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:32:22.285 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 1 is empty. Saving zeros to Warehouse.
+2025-12-08 17:32:22.285 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:32:22.285 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 2
+2025-12-08 17:32:22.285 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 2
+2025-12-08 17:32:22.285 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 2.
+2025-12-08 17:32:22.285 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 2 is empty. Saving zeros to Warehouse.
+2025-12-08 17:32:22.285 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 2 successfully added.
+2025-12-08 17:32:22.286 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Sorting repository
+2025-12-08 17:33:03.089 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 5
+2025-12-08 17:33:03.093 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 5
+2025-12-08 17:33:03.093 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 5.
+2025-12-08 17:33:03.114 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 5: ArrayData[max=20, min=10, avg=15.0, sum=30]
+2025-12-08 17:33:03.119 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 5 successfully added.
+2025-12-08 17:33:03.120 [main] DEBUG com.gergert.task1.entity.MyArray - Attempting to set value 100 at index 0 for Array ID 5
+2025-12-08 17:33:03.120 [main] INFO  com.gergert.task1.entity.MyArray - Successfully set value by index: 0, Notifying observer
+2025-12-08 17:33:03.120 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 5: ArrayData[max=100, min=20, avg=60.0, sum=120]
+2025-12-08 17:35:49.930 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 3
+2025-12-08 17:35:49.933 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 3
+2025-12-08 17:35:49.934 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 3.
+2025-12-08 17:35:49.934 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 3 is empty. Saving zeros to Warehouse.
+2025-12-08 17:35:49.934 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 3 successfully added.
+2025-12-08 17:35:49.935 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:35:49.935 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:35:49.935 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:35:49.935 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 1 is empty. Saving zeros to Warehouse.
+2025-12-08 17:35:49.935 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:35:49.935 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 2
+2025-12-08 17:35:49.935 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 2
+2025-12-08 17:35:49.936 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 2.
+2025-12-08 17:35:49.936 [main] WARN  gergert.task1.observer.impl.ArrayObserverImpl - Array ID 2 is empty. Saving zeros to Warehouse.
+2025-12-08 17:35:49.936 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 2 successfully added.
+2025-12-08 17:35:49.937 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Sorting repository
+2025-12-08 17:36:42.468 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 3
+2025-12-08 17:36:42.471 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 3
+2025-12-08 17:36:42.472 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 3.
+2025-12-08 17:36:42.489 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 3: ArrayData[max=6, min=1, avg=3.0, sum=9]
+2025-12-08 17:36:42.490 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 3 successfully added.
+2025-12-08 17:36:42.490 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:36:42.490 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:36:42.490 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:36:42.490 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=9, min=1, avg=4.0, sum=12]
+2025-12-08 17:36:42.490 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:36:42.491 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 2
+2025-12-08 17:36:42.491 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 2
+2025-12-08 17:36:42.491 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 2.
+2025-12-08 17:36:42.491 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 2: ArrayData[max=34, min=2, avg=15.0, sum=45]
+2025-12-08 17:36:42.491 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 2 successfully added.
+2025-12-08 17:36:42.493 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Sorting repository
+2025-12-08 17:38:07.273 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 3
+2025-12-08 17:38:07.278 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 3
+2025-12-08 17:38:07.279 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 3.
+2025-12-08 17:38:07.298 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 3: ArrayData[max=6, min=1, avg=3.0, sum=9]
+2025-12-08 17:38:07.298 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 3 successfully added.
+2025-12-08 17:38:07.298 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:38:07.299 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:38:07.299 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:38:07.299 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=9, min=1, avg=4.0, sum=12]
+2025-12-08 17:38:07.299 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:38:07.299 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 2
+2025-12-08 17:38:07.301 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 2
+2025-12-08 17:38:07.301 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 2.
+2025-12-08 17:38:07.301 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 2: ArrayData[max=34, min=2, avg=15.0, sum=45]
+2025-12-08 17:38:07.301 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 2 successfully added.
+2025-12-08 17:38:07.303 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Sorting repository
+2025-12-08 17:40:15.031 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 3
+2025-12-08 17:40:15.035 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 3
+2025-12-08 17:40:15.035 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 3.
+2025-12-08 17:40:15.052 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 3: ArrayData[max=6, min=1, avg=3.0, sum=9]
+2025-12-08 17:40:15.053 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 3 successfully added.
+2025-12-08 17:40:15.053 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:40:15.053 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:40:15.053 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:40:15.053 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=9, min=1, avg=4.0, sum=12]
+2025-12-08 17:40:15.054 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:40:15.054 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 2
+2025-12-08 17:40:15.054 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 2
+2025-12-08 17:40:15.054 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 2.
+2025-12-08 17:40:15.054 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 2: ArrayData[max=34, min=2, avg=15.0, sum=45]
+2025-12-08 17:40:15.054 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 2 successfully added.
+2025-12-08 17:40:15.055 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Sorting repository
+2025-12-08 17:40:36.184 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 3
+2025-12-08 17:40:36.189 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 3
+2025-12-08 17:40:36.190 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 3.
+2025-12-08 17:40:36.208 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 3: ArrayData[max=6, min=1, avg=3.0, sum=9]
+2025-12-08 17:40:36.209 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 3 successfully added.
+2025-12-08 17:40:36.209 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 1
+2025-12-08 17:40:36.209 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 1
+2025-12-08 17:40:36.209 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 1.
+2025-12-08 17:40:36.210 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 1: ArrayData[max=9, min=1, avg=4.0, sum=12]
+2025-12-08 17:40:36.210 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 1 successfully added.
+2025-12-08 17:40:36.210 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Find array with ID: 2
+2025-12-08 17:40:36.210 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Saved array ID 2
+2025-12-08 17:40:36.210 [main] DEBUG com.gergert.task1.entity.MyArray - Observer attached to array ID: 2.
+2025-12-08 17:40:36.211 [main] INFO  gergert.task1.observer.impl.ArrayObserverImpl - Warehouse updated for ID 2: ArrayData[max=34, min=2, avg=15.0, sum=45]
+2025-12-08 17:40:36.211 [main] INFO  gergert.task1.repository.impl.MyArrayRepositoryImpl - Array ID 2 successfully added.
+2025-12-08 17:40:36.212 [main] DEBUG gergert.task1.repository.impl.MyArrayRepositoryImpl - Sorting repository
