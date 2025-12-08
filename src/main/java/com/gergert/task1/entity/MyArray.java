@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Arrays;
+import java.util.StringJoiner;
 
 public class MyArray implements ArrayObservable {
     private static final Logger logger = LogManager.getLogger();
@@ -57,7 +58,7 @@ public class MyArray implements ArrayObservable {
     }
 
     public void setArray(int[] array) {
-        this.array = array;
+        this.array = Arrays.copyOf(array, array.length);
         logger.info("Array replaced for ID: {}. New size: {}", id, array.length);
         notifyArrayObservers();
     }
@@ -97,10 +98,10 @@ public class MyArray implements ArrayObservable {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("MyArray { ");
-        sb.append("array = ").append(Arrays.toString(array));
-        sb.append('}');
-        return sb.toString();
+        return new StringJoiner(", ", MyArray.class.getSimpleName() + " [", "]")
+                .add("id = " + id)
+                .add("array = " + Arrays.toString(array))
+                .toString();
     }
 
     @Override
