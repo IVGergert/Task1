@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-public interface MyArrayRepository {
+public interface CustomArrayRepository {
     void add (CustomArray customArray) throws CustomException;
     void remove (CustomArray customArray) throws CustomException;
     Optional<CustomArray> findArrayById(int id);

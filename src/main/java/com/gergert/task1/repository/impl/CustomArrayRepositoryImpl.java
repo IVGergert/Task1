@@ -4,7 +4,7 @@ import com.gergert.task1.entity.CustomArray;
 import com.gergert.task1.exception.CustomException;
 import com.gergert.task1.observer.ArrayObserver;
 import com.gergert.task1.observer.impl.ArrayObserverImpl;
-import com.gergert.task1.repository.MyArrayRepository;
+import com.gergert.task1.repository.CustomArrayRepository;
 import com.gergert.task1.specification.ArraySpecification;
 import com.gergert.task1.warehouse.impl.ArrayWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
@@ -13,18 +13,18 @@ import org.apache.logging.log4j.Logger;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class MyArrayRepositoryImpl implements MyArrayRepository {
+public class CustomArrayRepositoryImpl implements CustomArrayRepository {
     private static final Logger logger = LogManager.getLogger();
 
-    private static MyArrayRepositoryImpl instance;
+    private static CustomArrayRepositoryImpl instance;
     private final List<CustomArray> storage = new ArrayList<>();
 
-    private MyArrayRepositoryImpl(){
+    private CustomArrayRepositoryImpl(){
     }
 
-    public static MyArrayRepository getInstance() {
+    public static CustomArrayRepository getInstance() {
         if (instance == null) {
-            instance = new MyArrayRepositoryImpl();
+            instance = new CustomArrayRepositoryImpl();
         }
         return instance;
     }

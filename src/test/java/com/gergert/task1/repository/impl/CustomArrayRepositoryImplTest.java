@@ -15,15 +15,15 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MyArrayRepositoryImplTest {
+class CustomArrayRepositoryImplTest {
 
-    MyArrayRepositoryImpl repository;
+    CustomArrayRepositoryImpl repository;
 
     @BeforeEach
     void setUp() throws Exception {
-        resetSingleton(MyArrayRepositoryImpl.class, "instance");
+        resetSingleton(CustomArrayRepositoryImpl.class, "instance");
         resetSingleton(ArrayWarehouseImpl.class, "instance");
-        repository = (MyArrayRepositoryImpl) MyArrayRepositoryImpl.getInstance();
+        repository = (CustomArrayRepositoryImpl) CustomArrayRepositoryImpl.getInstance();
     }
 
     @Test
